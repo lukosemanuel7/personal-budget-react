@@ -14,6 +14,7 @@ import HomePage from './HomePage/HomePage';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
 import Footer from './Footer/Footer';
+import PieChart from './PieChart/PieChart';
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
             <LoginPage/>
           </Route>
           <Route path='/'>
-            <HomePage/>
+            <HomePage>
+              <PieChart/>
+            </HomePage>
+            
           </Route>
         </Switch>
       </div>

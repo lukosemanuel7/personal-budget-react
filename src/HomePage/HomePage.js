@@ -1,4 +1,6 @@
 import React from 'react';
+import PieChart from '../PieChart/PieChart';
+import D3Chart from '../D3Chart/D3Chart';
 
 function HomePage() {
   return (
@@ -32,23 +34,20 @@ function HomePage() {
             </div>
   
             <div className="text-box">
-                <h2>Software</h2>
+                <h2>Free</h2>
                 <p>
-                    Personal budget software will help you make a personal cash budget. 
-                    Instead of making a weekly or monthly budget in excel you can use this app and not 
-                    fret about the strategies in personal budgeting or figure out what all are included.
+                      This app is free!!! And you are the only one holding your data!
                 </p>
             </div>
 
 
-            <div className="pieChart">
-                <h2>Chart</h2>
-                <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                </p>
-            </div>
+              <div className="pieChart">
+                  <h2>Chart</h2>
+                  <PieChart/>
+              </div>
             <div className="D3Chart" id="d3Chart">
                 <h2>D3 Pie Chart</h2>
+                <D3Chart/>
             </div>
             
         </div>
